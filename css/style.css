@@ -1,0 +1,11 @@
+.colorswitch { 
+	width: 500px; 
+	height: 200px; 
+	border: 1px solid #222; 
+	margin: 200px auto; 
+	-moz-transition: all 2s ease-out;
+	-o-transition: all 2s ease-out;
+	-webkit-transition: all 2s ease-out;
+	-ms-transition: all 2s ease-out;
+	transition: all 2s ease-out;
+}

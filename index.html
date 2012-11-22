@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+	</head>
+	<body>
+		<div class="colorswitch" data-colors='["#FF0000", "#00FF00", "#0000FF"]' data-random="false"></div>
+		<button id="button1">Pause</button>
+		<button id="button2">Cycle</button>
+		<button id="button3">Switch</button>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+		<script src="js/jquery.colorswitch.js"></script>
+		<script>			
+			$(function() {
+				$('#button1').on('click', function() { $('.colorswitch').colorswitch('pause'); });
+				$('#button2').on('click', function() { $('.colorswitch').colorswitch('cycle'); });
+				$('#button3').on('click', function() { $('.colorswitch').colorswitch(1); });
+			});
+		</script>
+	</body>
+</html>
